@@ -1,0 +1,287 @@
+<head>
+    <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Anton&family=Dancing+Script:wght@700&family=Edu+NSW+ACT+Foundation&family=Foldit&family=Montserrat:wght@300&family=Pacifico&family=Rajdhani&family=Satisfy&family=Special+Elite&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Google Lense VS Mobilenet</h1>
+    <center>
+        <ol>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Ball</b>
+                    <img src="Ball.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Squeeze Eyeball Bungee</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Baseball</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Mobilenet</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Folder</b>
+                    <img src="Folder.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>5 star 2 pocket Folder</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Lighter</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lense</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Glasses</b>
+                    <img src="Glasses.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Eye Glasses</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Sunglasses</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Tape Dispenser</b>
+                    <img src="Tape.webp" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Correction Tape</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Hair Drier</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lense</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Water Bottle</b>
+                    <img src="Water Bottle.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Insulated Water Bottle</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Holster</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Laptop</b>
+                    <img src="71WtvRYq-bL.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Lenovo Chromebook</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Laptop</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Paper</b>
+                    <img src="Paper.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Filler Paper</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Window Screen</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - iPhone</b>
+                    <img src="iphone-card-40-iphone14pro-202209_FMT_WHH.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Apple iPhone 13</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Microphone</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Fox Sleeping Mask</b>
+                    <img src="il_fullxfull.963450438_27ya.jpg" class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Sleep Mask</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Ski Mask</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - Pillow</b>
+                    <img src="13_Marlow_Pillow-Silo_Overhead_King_0986_C_x_WOgrey_768x.progressive.webp"
+                        class="img-responsive">
+                </li>
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>GOOGLE LENS</b> -
+                    <span>Reversible Decorative Pillow</span>
+                </h5>
+
+
+                <h5 class="col-sm-4 col-xs-12">
+                    Output on <b>Mobilenet Model</b> -
+                    <span>Breastplate</span>
+                </h5>
+
+                <div class="mini_result col-xs-12">
+                    <h4>Result - Google Lens</h4>
+                    <hr>
+                    <h4></h4>
+                </div>
+
+
+            </div>
+            <br><br><br><br><br><br><br><br>
+        </ol>
+        <br><br><br><br><br><br><br><br>
+        <div id="conclusion">
+            <h4>In Conclusion, Mobilenet is not as accurate as Google Lense because out of 9/10 of them were more
+                accurate from Google Lens.</h4>
+        </div>
+    </center>
+</body>
